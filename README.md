@@ -44,7 +44,7 @@ Group Project for TCSS 460 @ UWT
 
 
 ### Shiraz
-
+- Back end bugfixes
 
 ---
 
@@ -60,6 +60,7 @@ Group Project for TCSS 460 @ UWT
 
 
 **Shiraz**
+- Fairly busy this week, so I didn't contribute much (sorry). 
 
 
 **Patrick Quaidoo** 
