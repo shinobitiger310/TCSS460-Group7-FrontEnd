@@ -40,6 +40,18 @@ Group Project for TCSS 460 @ UWT
 - Created Figma pages with Shinnel. 
 
 ### Shiannel
+- Looked over the documentation from group 1, 2 and 8
+- Thought of possible ideas for our webpage design
+   - Who/What is it for, their purpose
+   - The possible endpoints we would use
+   - Other separate APIs we would need to implement
+ - Created the Figma Design Pages with Linda
+   - The Login/Sign Up
+   - Reset Password/Forgot Password
+   - Main Page/Dashboard/Recommendations
+   - Movies and TV shows/details, more info
+   - Search bar
+   - User profile/Watchlist/Watch history
 
 
 ### Bao
@@ -61,7 +73,8 @@ Group Project for TCSS 460 @ UWT
 
 
 **Shiannel/Coco**
-
+- Learned and review the documentation of other group members, trying to understand how it works
+- Learning how to use and navigate Figma
 
 **Shiraz**
 - Fairly busy this week, so I didn't contribute much (sorry). 
