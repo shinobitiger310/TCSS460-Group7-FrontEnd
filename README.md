@@ -11,8 +11,46 @@ TV Shows Data: https://g1-tvapi.onrender.com/api-docs/
 Credentials: https://credentials-api-group2-20f368b8528b.herokuapp.com/api-docs/
 
 ---
+## Beta I Sprint Meetings
+### Discussion 1
+- **Date:** Monday, November 10, 2025
+- **Time:** 3:30 PM - 4:45 PM (75 minutes)
+- **Location:** In-Person
+#### Actions:
+- Planned out the components and pages for the front-end.
+- Delegated tasks between members.
+- Full functionality and API integration (except for login credentials) will likely not be included for this week.
+---
 
-## Production Version Sprint Meetings
+## Beta I Sprint Contributions
+
+### Patrick
+
+### Linda Miao
+
+### Shiannel
+
+### Bao
+
+### Shiraz 
+
+--- 
+
+## Beta I Sprint Comments
+
+### Patrick
+
+### Linda Miao
+
+### Shiannel
+
+### Bao
+
+### Shiraz 
+
+---
+
+## Alpha Sprint Meetings
 
 ### Discussion 1
 - **Date:** Monday, November 3, 2025
