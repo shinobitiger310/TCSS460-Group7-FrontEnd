@@ -2,6 +2,14 @@
 
 Group Project for TCSS 460 @ UWT  
 
+Utilizes the following APIs:
+
+Movies Data: https://dataset-web-api.onrender.com/api-docs/
+
+TV Shows Data: https://g1-tvapi.onrender.com/api-docs/
+
+Credentials: https://credentials-api-group2-20f368b8528b.herokuapp.com/api-docs/
+
 ---
 
 ## Production Version Sprint Meetings
