@@ -32,9 +32,9 @@ export default function LoginPage() {
         throw new Error(result.details || result.error || 'Login failed');
       }
 
-      if (result.token) {
-        localStorage.setItem('token', result.token);
-        localStorage.setItem('user', JSON.stringify(result.user));
+      if (result.data && result.data.accessToken) {
+        localStorage.setItem('token', result.data.accessToken);
+        localStorage.setItem('user', JSON.stringify(result.data.user));
         router.push('/dashboard');
       } else {
         throw new Error('No access token received');
