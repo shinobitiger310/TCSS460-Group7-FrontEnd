@@ -24,7 +24,7 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const response = await fetch('https://tcss460-group7-credential-api.onrender.com/auth/register', {
+      const response = await fetch('https://credentials-api-group2-20f368b8528b.herokuapp.com/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -33,17 +33,17 @@ export default function RegisterPage() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message || 'Registration failed');
+        throw new Error(data.details || data.error || 'Registration failed');
       }
-      
+
       if (data.token) {
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user || {}));
       }
-      
+
       router.push('/dashboard');
-    } catch (err) {
-      setError(String(err));
+    } catch (err: any) {
+      setError(err.message || String(err));
     } finally {
       setLoading(false);
     }

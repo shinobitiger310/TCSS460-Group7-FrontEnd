@@ -20,7 +20,7 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await fetch('https://tcss460-group7-credential-api.onrender.com/auth/login', {
+      const response = await fetch('https://credentials-api-group2-20f368b8528b.herokuapp.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: formData.email, password: formData.password }),
@@ -29,18 +29,18 @@ export default function LoginPage() {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.message || 'Login failed');
+        throw new Error(result.details || result.error || 'Login failed');
       }
-      
-      if (result.data && result.data.accessToken) {
-        localStorage.setItem('token', result.data.accessToken);
-        localStorage.setItem('user', JSON.stringify(result.data.user));
+
+      if (result.token) {
+        localStorage.setItem('token', result.token);
+        localStorage.setItem('user', JSON.stringify(result.user));
         router.push('/dashboard');
       } else {
         throw new Error('No access token received');
       }
-    } catch (err) {
-      setError(String(err));
+    } catch (err: any) {
+      setError(err.message || String(err));
     } finally {
       setLoading(false);
     }
@@ -71,6 +71,11 @@ export default function LoginPage() {
                   )}
                 </button>
               </div>
+            </div>
+            <div className="text-right">
+              <Link href="/forgot-password" className="text-purple-400 hover:text-purple-300 text-sm">
+                Forgot Password?
+              </Link>
             </div>
             <button type="submit" disabled={loading} className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded">{loading ? 'Logging in...' : 'Login'}</button>
             <div className="text-center"><p className="text-white mb-4">Don't have account?</p><Link href="/register" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded">Sign Up</Link></div>
